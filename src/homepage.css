@@ -68,9 +68,10 @@ a {
 
 #home img:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 0 rgb(0, 0, 0);
 }
 
-#home p {
+#home div {
     font-size: 25px;
     width: 60%;
 }
@@ -139,14 +140,30 @@ a {
 /* ~Projects~ */
 
 /* About */
-#about{
+#about {
     display: flex;
     justify-content: space-evenly;
-    margin: 150px 0; 
+    flex-wrap: wrap;
+    margin: 150px 0;
 }
-.educations{
-    width: 40%;
+
+.educations {
+    width: 100%;
+    display: flex;
     text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.university {
+    width: 45%;
+    height: max-content;
+    text-align: left;
+}
+
+.university>p {
+    font-size: 1.5rem;
 }
 
 /* ~About~ */
@@ -201,18 +218,27 @@ a {
     .project {
         width: 50%;
     }
-    .social-media-icons{
+
+    .social-media-icons {
         flex-direction: column;
         align-items: center;
         gap: 15px;
     }
-    #about{
+
+    #about {
         flex-direction: column;
         align-items: center;
     }
-    .educations{
+
+    .university {
         width: 80%;
     }
+
+    .university > p{
+        font-size: 1rem;
+    }
 }
+
+@media screen and (min-width: 320px) {}
 
 /*  */

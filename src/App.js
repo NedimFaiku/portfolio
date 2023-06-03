@@ -1,7 +1,8 @@
 import './App.css';
+import Navbar from './homepage';
 
 function App() {
-  return ;
+  return <Navbar/>;
 }
 
 export default App;
